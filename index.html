@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/1ac92020ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <!-- comment -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- connects us to weather api--->
+    <title>Frida's Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-body body-outline" style="max-width: 500px">
+        <!--this is for the entire app-->
+        <!-- -->
+        <form id="citySearch-form">
+          <div class="input-group mb-3">
+            <input
+              type="search"
+              class="form-control search-text-bar"
+              placeholder="Search By City Name. . ."
+              autocomplete="off"
+              autofocus="on"
+              id="search-text-input"
+            />
+            <button class="btn search-button" type="submit">🔍</button> 
+          </form>
+            <button
+              class="btn current-location-search"
+              type="button"
+              id="gpsLocationButton"
+            >
+              Current 📍
+            </button>
+          </div>
+       
+        <!---->
+        <div class="card mb-2 city-info-section">
+          <div class="row no-gutters align-items-center">
+            <div class="col-8">
+              <div class="card-body city-information">
+                <h1 class="card-title city-Name" id="current-cityName">
+                  Los Angeles
+                </h1>
+                <p
+                  class="card-text current-date-time"
+                  id="current-day-date-time"
+                >
+                  Wed 12/22, 8:00 PM
+                </p>
+                <p class="weather-description" id="cityWeatherDescriptionElem">cloudy</p>
+              </div>
+            </div>
+            <div class="col accessory-icon-section">
+              <h1 class="accessory-icon" id="emoji">🧣</h1>
+            </div>
+          </div>
+        </div>
+        <!----->
+        <div class="row no-gutters align-items-center current-weather-section">
+          <div class="col-3 current-weather-icon">
+            <i class="fa-solid fa-cloud" id="weather-icon"></i>
+          </div>
+          <div class="col current-temperature-with-units">
+            <span class="current-temperature" id="current-temp-value">66</span>
+            <span class="temperature-units">
+              <a href="#" id="fahrenheit-link">°F</a>
+              <span class="unitDivider">|</span>
+              <a href="#" id="celsius-link">°C</a>
+            </span>
+          </div>
+          <div class="col-4">
+            <p class="current-humidity" id="humidity">Humidity: 30%</p>
+            <p class="current-wind" id="windSpeed">Wind: 3 mph</p>
+          </div>
+        </div>
+        <!----->
+        <div class="week-forecast" id="forecast"></div>
+        <!----->
+        <div class="card mb-3 quote-picture-table">
+          <div class="row no-gutters align-items-center">
+            <div class="col">
+              <div class="card-body quote-space">
+                <i class="fas fa-quote-left"></i>
+                <h5 class="card-title quote-text evening-quote" id="quote">
+                  May your trials end in full bloom.
+                </h5>
+                <i class="fas fa-quote-right"></i>
+                <h6 class="quote-author" id="author">- Agust D</h6>
+              </div>
+            </div>
+            <div class="col">
+              <img
+                src="instaImages/blue-waves-friconcafecito-2.png"
+                class="img-fluid image-decoration"
+                alt="blue-waves"
+                id ="instagram-pic"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+    <a href="https://github.com/CodingConCafecito/weather-app-sheCodesPlus" target="_blank"><i class="fab fa-github"></i></a> and 📸s by
+      <a href="https://www.linkedin.com/in/frida-morales-b091b0166/" target="_blank"
+        ><i class="fab fa-linkedin"></i></a>
+    </footer>
+    <!---->
+    <script src="src/index.js"></script>
+  </body>
+</html>

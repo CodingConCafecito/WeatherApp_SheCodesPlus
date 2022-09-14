@@ -1,0 +1,264 @@
+body {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Overpass", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  transition: all 600ms ease;
+}
+
+footer {
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+footer a {
+  color: #885df1;
+}
+
+footer a:hover {
+  color: #5c22ee;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.body-outline {
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(93, 44, 44, 0.25);
+  padding-bottom: 5px;
+}
+
+.card-body {
+  background-color: #cadefc;
+}
+
+.search-text-bar {
+  background: linear-gradient(
+    90deg,
+    rgb(246, 250, 255) 80%,
+    rgb(202, 222, 252) 100%
+  );
+  border-radius: 10px;
+  border-color: #5d9bf8;
+  border-right: none;
+  margin-left: 18px;
+}
+.search-button {
+  background-color: #cadefc;
+  border-radius: 0;
+  border-color: #5d9bf8;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 10px;
+}
+
+.current-location-search {
+  border-color: #cadefc;
+  border-radius: 10px;
+  color: #798088;
+  padding-right: 8px;
+}
+
+.search-button:hover {
+  transition: all 400ms ease;
+}
+
+.current-location-search:hover {
+  transition: all 500ms ease;
+  background-color: #8bb6f6;
+  border-color: #cadefc;
+  color: rgb(246, 250, 255);
+}
+
+.city-info-section {
+  background-color: #cadefc;
+  border: none;
+}
+
+.current-date-time,
+.weather-description {
+  margin: 0;
+  font-size: 17px;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
+.weather-description,
+.weekday-temperatures {
+  font-weight: 300;
+}
+
+.city-Name,
+.weekday-titles {
+  font-weight: 800;
+}
+
+.city-information {
+  padding-bottom: 0;
+  padding-top: 5px;
+}
+
+.accessory-icon-section {
+  padding-top: 10px;
+  bottom: -15px;
+}
+
+.accessory-icon {
+  font-size: 80px;
+  text-align: center;
+}
+
+.current-weather-section {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.current-weather-icon {
+  font-size: 61px;
+}
+
+.current-temperature {
+  font-size: 40px;
+  font-weight: 450;
+}
+
+.temperature-units {
+  font-size: 17px;
+  position: relative;
+  top: -20px;
+}
+
+.unitDivider {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.current-humidity,
+.current-wind {
+  margin: 0;
+}
+
+.week-forecast {
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 16px;
+  margin-bottom: 15px;
+}
+
+.weekday-icons {
+  font-size: 30px;
+}
+
+.weekday-icons,
+.weekday-titles,
+.weekday-temperatures {
+  margin: 0;
+}
+
+.fa-cloud,
+.fa-bolt-lightning,
+.fa-smog {
+  background: -webkit-linear-gradient(
+    280deg,
+    rgb(52, 58, 64) 0%,
+    rgb(173, 181, 189) 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-cloud-rain,
+.fa-cloud-showers-heavy,
+.fa-wind {
+  background: -webkit-linear-gradient(
+    280deg,
+    rgb(52, 58, 64) 0%,
+    rgb(49, 134, 219) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-sun {
+  background: -webkit-linear-gradient(
+    280deg,
+    rgb(231, 125, 4) 18%,
+    rgb(235, 212, 6) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-snowflake {
+  background: -webkit-linear-gradient(
+    280deg,
+    rgb(80, 35, 128) 20%,
+    rgb(173, 181, 189) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.weekday-titles,
+.weekday-temperatures {
+  font-size: 14px;
+}
+
+.forecast-unit {
+  color: #798088;
+}
+
+.quote-picture-table {
+  background-color: #cadefc;
+  text-align: center;
+  margin-top: 15px;
+  border: none;
+}
+
+.quote-space {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.fa-quote-left {
+  color: #f6faff;
+  display: block;
+  text-align: left;
+}
+
+.quote-text {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.fa-quote-right {
+  color: #f6faff;
+  display: block;
+  text-align: right;
+}
+
+.quote-author {
+  padding-top: 8px;
+  margin: 0;
+}
+
+.image-decoration {
+  border-radius: 10px;
+  max-height: 200px;
+  margin-top: 16px;
+}
+
+.fa-github,
+.fa-linkedin {
+  font-size: 17px;
+}
