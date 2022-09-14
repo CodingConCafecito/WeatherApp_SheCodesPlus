@@ -1,6 +1,6 @@
 # weather-app-sheCodesPlus
 
-Hello 👋🏾 As of the end of Feb 2021 I finished working 🛠 on my weather app for the SheCodes Plus course. 👩🏽‍💻 🎉
+Hello 👋🏾 At the end of Feb. 2021 I finished working 🛠 on my weather app for the SheCodes Plus course. 👩🏽‍💻 🎉
 In the future I want to implement the following:
 
 - Secure/Protect/Hide API Key
